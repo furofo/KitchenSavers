@@ -1,0 +1,18 @@
+.navbar {
+  background-color: blue;
+}
+
+.button {
+  float: right;
+  background-color: transparent;
+  margin-right: 10px;
+  color: blue;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-color: black;
+  border-style: none none solid none;
+}
+
+.button:hover {
+  background-color: gray;
+}
