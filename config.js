@@ -25,9 +25,8 @@ window.addEventListener("DOMContentLoaded", function() {
     current++;
     current = current % backgrounds.length;
     header.style.backgroundImage = backgrounds[current];
-    
   }
-  setInterval(nextBackground, 1000);
+  setInterval(nextBackground, 3000);
 
   header.style.backgroundImage = backgrounds[0];
 });
