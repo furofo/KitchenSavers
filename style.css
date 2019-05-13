@@ -52,17 +52,23 @@ table {
   float: right;
   background-color: transparent;
   margin-right: 10px;
-  color: blue;
+  color: white;
   padding: 14px 28px;
   font-size: 16px;
-  border-color: black;
+  border-color: rgb(248, 241, 241);
   border-style: none none solid none;
 }
 
 .navbarbutt:hover {
-  background-color: gray;
+  background-color: rgb(173, 216, 230);
+  transition: .3s;
 }
 
 .marginright { /* to adjust righmost menubutton currently home to give a little space on the right side */
   margin-right: 50px;
 }
+
+.indexbackground {
+background-image: url("img/background1.jpeg");
+}
+
