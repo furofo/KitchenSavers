@@ -128,6 +128,10 @@ table {
 
 /*website styling starts here */
 
+.sitemenu {
+  /* this is navigation wrapper for all buttons in site menu at the top */
+  padding-top: 40px;
+}
 .navbarbutt {
   /* this is button menu in far right with underline underneath will make a bootstrap like menu for mobile */
   float: right;
