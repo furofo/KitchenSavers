@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
-  /* document.getElementById("aboutbtn").onclick = function() {
+  document.getElementById("aboutbtn").onclick = function() {
     //these are listeners for each button that link to different website pages
     location.href = "/about.html";
   };
@@ -12,6 +12,8 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById("gallerybtn").onclick = function() {
     location.href = "/gallery.html";
   };
+
+ 
   /*
   var backgroundimg = document.getElementById("indexbackground1");
 
@@ -31,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function() {
   
 
   backgroundimg.style.backgroundImage = backgrounds[0];
-  */
+  
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 });
 
