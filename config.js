@@ -1,5 +1,6 @@
-window.addEventListener("DOMContentLoaded", function() {    
-  document.getElementById("aboutbtn").onclick = function() {  //these are listeners for each button that link to different website pages
+window.addEventListener("DOMContentLoaded", function() {
+  /* document.getElementById("aboutbtn").onclick = function() {
+    //these are listeners for each button that link to different website pages
     location.href = "/about.html";
   };
   document.getElementById("homebtn").onclick = function() {
@@ -11,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById("gallerybtn").onclick = function() {
     location.href = "/gallery.html";
   };
-/*
+  /*
   var backgroundimg = document.getElementById("indexbackground1");
 
   var backgrounds = new Array(
@@ -27,7 +28,18 @@ window.addEventListener("DOMContentLoaded", function() {
     backgroundimg.style.backgroundImage = backgrounds[current];
   }
   setInterval(nextBackground, 3000);
-  */
+  
 
   backgroundimg.style.backgroundImage = backgrounds[0];
+  */
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 });
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
