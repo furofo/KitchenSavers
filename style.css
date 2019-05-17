@@ -221,7 +221,7 @@ table {
 }
 
 /* media queries here */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   body {
     background-color: lightblue;
   }
