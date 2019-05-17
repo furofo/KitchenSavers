@@ -182,13 +182,14 @@ table {
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  
   position: relative;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+  background-color: gray;
 }
 
 /* Style navigation menu links */
@@ -201,12 +202,10 @@ table {
 }
 
 /* Style the hamburger menu */
-.topnav a.icon {
+.icon {
   background: black;
   display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+  float: right;
 }
 
 /* Add a grey background color on mouse-over */
@@ -217,7 +216,7 @@ table {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -237,7 +236,7 @@ table {
     margin-top: 0px;
     margin-right: 0px;
     margin-left: 0px;
-    background-color: red;
+    
     font-size: 64px;
   }
 }
