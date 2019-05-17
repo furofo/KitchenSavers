@@ -154,6 +154,11 @@ table {
   margin-right: 50px;
 }
 
+/*body styling */
+body {
+  background-color: lightgray;
+  opacity: 0.99;
+}
 #indexbackground {
   -webkit-transition: background-image 0.8s ease-in-out;
   transition: background-image 0.8s ease-in-out;
@@ -170,7 +175,7 @@ table {
   width: 500px;
   height: 500px;
   float: left;
-  background-color: blue;
+  
 }
 
 .imglogo {
@@ -221,6 +226,11 @@ table {
 }
 
 /* media queries here */
+@media only screen and (max-width: 1050px) {
+    .navbarbutt {
+      font-size: 11px;
+    }
+}
 @media only screen and (max-width: 950px) {
   body {
     background-color: lightblue;
@@ -239,4 +249,22 @@ table {
     
     font-size: 64px;
   }
+
+  .imglogo {
+    width:300px;
+    height: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+.logo {
+  width: 250px;
+  height: 250px;
+}
+.imglogo {
+  width: 200px;
+  height: 200px;
+}
+
 }
