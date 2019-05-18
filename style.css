@@ -208,14 +208,14 @@ body {
 
 /* Style the hamburger menu */
 .icon {
-  background: black;
+ 
   display: block;
   float: right;
 }
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  
   color: black;
 }
 
