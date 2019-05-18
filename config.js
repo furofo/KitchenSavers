@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function() {
   };
 
  
-  /*
+  
   var backgroundimg = document.getElementById("indexbackground1");
 
   var backgrounds = new Array(
@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function() {
     current = current % backgrounds.length;
     backgroundimg.style.backgroundImage = backgrounds[current];
   }
-  setInterval(nextBackground, 3000);
+  setInterval(nextBackground, 10000);
   
 
   backgroundimg.style.backgroundImage = backgrounds[0];

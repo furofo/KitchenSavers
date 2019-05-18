@@ -137,7 +137,7 @@ table {
   float: right;
   background-color: transparent;
   margin-right: 10px;
-  color: blue;
+  color: white;
   padding: 14px 28px;
   font-size: 16px;
   border-color: rgb(248, 241, 241);
@@ -157,9 +157,9 @@ table {
 /*body styling */
 body {
   background-color: lightgray;
-  opacity: 0.99;
+  opacity: 0.9;
 }
-#indexbackground {
+#indexbackground1 {
   -webkit-transition: background-image 0.8s ease-in-out;
   transition: background-image 0.8s ease-in-out;
 }
