@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function() {
     current = current % backgrounds.length;
     backgroundimg.style.backgroundImage = backgrounds[current];
   }
-  setInterval(nextBackground, 10000);
+  setInterval(nextBackground, 3000);
   
 
   backgroundimg.style.backgroundImage = backgrounds[0];

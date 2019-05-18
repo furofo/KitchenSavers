@@ -32,7 +32,7 @@ kbd,
 q,
 s,
 samp,
-small,
+smbackground-image,
 strike,
 strong,
 sub,
@@ -155,19 +155,23 @@ table {
 }
 
 /*body styling */
-body {
-  background-color: lightgray;
-  opacity: 0.9;
-}
+
 #indexbackground1 {
-  -webkit-transition: background-image 0.8s ease-in-out;
-  transition: background-image 0.8s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.greyoverlay {
+  color: black;
+  z-index: 6;
 }
 
 .mobilemenu {
   display: none;
 }
-
 
 /*logo styling */
 
@@ -175,7 +179,6 @@ body {
   width: 500px;
   height: 500px;
   float: left;
-  
 }
 
 .imglogo {
@@ -183,11 +186,10 @@ body {
   padding-top: 20px;
 }
 
-
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  
+
   position: relative;
 }
 
@@ -208,28 +210,26 @@ body {
 
 /* Style the hamburger menu */
 .icon {
- 
   display: block;
   float: right;
 }
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  
   color: black;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
 /* media queries here */
 @media only screen and (max-width: 1050px) {
-    .navbarbutt {
-      font-size: 11px;
-    }
+  .navbarbutt {
+    font-size: 11px;
+  }
 }
 @media only screen and (max-width: 950px) {
   body {
@@ -246,25 +246,23 @@ body {
     margin-top: 0px;
     margin-right: 0px;
     margin-left: 0px;
-    
+
     font-size: 64px;
   }
 
   .imglogo {
-    width:300px;
+    width: 300px;
     height: 300px;
   }
 }
 
-
 @media only screen and (max-width: 550px) {
-.logo {
-  width: 250px;
-  height: 250px;
-}
-.imglogo {
-  width: 200px;
-  height: 200px;
-}
-
+  .logo {
+    width: 250px;
+    height: 250px;
+  }
+  .imglogo {
+    width: 200px;
+    height: 200px;
+  }
 }
