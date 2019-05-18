@@ -1,4 +1,4 @@
-/* this is to reset all browser padding back to 0 to prevent weird issues across browsers */
+/* this is to reset opacity browser padding back to 0 to prevent weird issues across browsers */
 
 html,
 body,
@@ -124,12 +124,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* this is to reset all browser padding back to 0 to prevent weird issues across browsers */
+/* this is to reset opacity browser padding back to 0 to prevent weird issues across browsers */
 
 /*website styling starts here */
 
 .sitemenu {
-  /* this is navigation wrapper for all buttons in site menu at the top */
+  /* this is navigation wrapper for opacity buttons in site menu at the top */
   padding-top: 40px;
 }
 .navbarbutt {
@@ -157,11 +157,11 @@ table {
 /*body styling */
 
 #indexbackground1 {
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .greyoverlay {
@@ -265,4 +265,24 @@ table {
     width: 200px;
     height: 200px;
   }
+}
+
+#cf {
+  position: relative;
+  height: 281px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+#cf img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity: 0;
 }
