@@ -13,12 +13,10 @@ window.addEventListener("DOMContentLoaded", function() {
     location.href = "/gallery.html";
   };
 
- 
-  
   var backgroundimg = document.getElementById("indexbackground1");
 
   var backgrounds = new Array(
-    "url(img/background1.jpeg)",  //array of all background imgs to cycle through
+    "url(img/background1.jpeg)", //array of all background imgs to cycle through
     "url(img/background2.jpeg)"
   );
 
@@ -27,13 +25,15 @@ window.addEventListener("DOMContentLoaded", function() {
   function nextBackground() {
     current++;
     current = current % backgrounds.length;
-    backgroundimg.style.backgroundImage = backgrounds[current];
+    //backgroundimg.style.backgroundImage = backgrounds[current];
+    backgroundimg.style.background =
+      backgrounds[current];
+    console.log( backgrounds[current] + " no repeat");
   }
   setInterval(nextBackground, 3000);
-  
 
-  backgroundimg.style.backgroundImage = backgrounds[0];
-  
+  // backgroundimg.style.backgroundImage = backgrounds[0];
+
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 });
 
