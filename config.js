@@ -26,9 +26,10 @@ window.addEventListener("DOMContentLoaded", function() {
     current++;
     current = current % backgrounds.length;
     //backgroundimg.style.backgroundImage = backgrounds[current];
-    backgroundimg.style.background =
-      backgrounds[current];
-    console.log( backgrounds[current] + " no repeat");
+    //backgroundimg.background.style.opacity = "1";
+    backgroundimg.style.background = backgrounds[current];
+    backgroundimg.background.style.opacity = "1";
+    console.log(backgrounds[current] + " no repeat");
   }
   setInterval(nextBackground, 3000);
 

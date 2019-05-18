@@ -1,4 +1,4 @@
-/* this is to reset opacity browser padding back to 0 to prevent weird issues across browsers */
+/* this is to reset background browser padding back to 0 to prevent weird issues across browsers */
 
 html,
 body,
@@ -86,7 +86,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  verticbackground-backgroundign: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -124,12 +124,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* this is to reset opacity browser padding back to 0 to prevent weird issues across browsers */
+/* this is to reset background browser padding back to 0 to prevent weird issues across browsers */
 
 /*website styling starts here */
 
 .sitemenu {
-  /* this is navigation wrapper for opacity buttons in site menu at the top */
+  /* this is navigation wrapper for background buttons in site menu at the top */
   padding-top: 40px;
 }
 .navbarbutt {
@@ -157,11 +157,11 @@ table {
 /*body styling */
 
 #indexbackground1 {
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
 }
 
 .greyoverlay {
@@ -272,17 +272,18 @@ table {
   height: 281px;
   width: 450px;
   margin: 0 auto;
+  background: url("img/background1.jpeg");
 }
 
-#cf img {
+#cf  {
   position: absolute;
   left: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
 }
 
-#cf img.top:hover {
-  opacity: 0;
+#cf :hover {
+  opacity: 1;
 }
