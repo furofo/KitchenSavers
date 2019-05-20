@@ -180,12 +180,14 @@ table {
     opacity: 0;
   }
 }
+
 #img1 {
   position: absolute;
   top: 0;
   left: 0p;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 #img2 {
@@ -194,13 +196,15 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
-
   animation-name: fade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 6s;
   animation-direction: alternate;
+  z-index: -1;
 }
+
+/* default mobile menu is none media query to set to visible when on mobile  this i hamburger menu */
 
 .mobilemenu {
   display: none;
