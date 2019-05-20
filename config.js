@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function() {
     "url(img/background1.jpeg)", //array of all background imgs to cycle through
     "url(img/background2.jpeg)"
   );
-
+/*
   var current = 0;
 
   function nextBackground() {
@@ -33,9 +33,10 @@ window.addEventListener("DOMContentLoaded", function() {
   }
   setInterval(nextBackground, 3000);
 
-  // backgroundimg.style.backgroundImage = backgrounds[0];
+  // backgroundimg.style.background = backgrounds[0];
 
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  
 });
 
 function myFunction() {

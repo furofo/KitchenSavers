@@ -156,17 +156,50 @@ table {
 
 /*body styling */
 
-#indexbackground1 {
-  -webkit-transition: background 1s ease-in-out;
-  -moz-transition: background 1s ease-in-out;
-  -ms-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
+#img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.greyoverlay {
-  color: black;
-  z-index: 6;
+/* animations related to main background images for smooth transition" */
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#img1 {
+  position: absolute;
+  top: 0;
+  left: 0p;
+  width: 100%;
+  height: 100%;
+}
+
+#img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
 }
 
 .mobilemenu {
@@ -275,7 +308,7 @@ table {
   background: url("img/background1.jpeg");
 }
 
-#cf  {
+#cf {
   position: absolute;
   left: 0;
   -webkit-transition: background 1s ease-in-out;
