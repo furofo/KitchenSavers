@@ -233,7 +233,7 @@ table {
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
-  background-color: gray;
+  background-color: rgb(178, 174, 174);
 }
 
 /* Style navigation menu links */
@@ -256,10 +256,20 @@ table {
   color: black;
 }
 
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #4caf50;
-  color: white;
+/* styling for contact page */
+
+.contactHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  background-color: grey;
+  z-index: -1;
+}
+
+.contactlogo {
+  padding-bottom: 90px !important;
 }
 
 /* media queries here */
@@ -302,25 +312,4 @@ table {
     width: 200px;
     height: 200px;
   }
-}
-
-#cf {
-  position: relative;
-  height: 281px;
-  width: 450px;
-  margin: 0 auto;
-  background: url("img/background1.jpeg");
-}
-
-#cf {
-  position: absolute;
-  left: 0;
-  -webkit-transition: background 1s ease-in-out;
-  -moz-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
-}
-
-#cf :hover {
-  opacity: 1;
 }
