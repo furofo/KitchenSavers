@@ -164,6 +164,11 @@ table {
   height: 100%;
 }
 
+/* used to clear other classes that use floats */
+.clear {
+  clear: both;
+}
+
 /* animations related to main background images for smooth transition" */
 
 @keyframes fade {
@@ -278,6 +283,10 @@ table {
 .navbarbuttcontact {
   margin-top: 30px;
   
+}
+
+.secondrowcontact {
+ 
 }
 
 /* media queries here */
