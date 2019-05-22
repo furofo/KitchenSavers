@@ -262,14 +262,22 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  height: 150px;
+  height: 200px;
   width: 100%;
   background-color: grey;
   z-index: -1;
 }
 
 .contactlogo {
-  padding-bottom: 90px !important;
+  position:absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.navbarbuttcontact {
+  margin-top: 30px;
+  
 }
 
 /* media queries here */
@@ -312,4 +320,23 @@ table {
     width: 200px;
     height: 200px;
   }
+}
+
+
+.test1 {
+  width: 400px;
+  height: 400px;
+  padding-left: 30px;
+  padding-top: 30px;
+
+  background-color: red;
+  border-style: solid;
+  border-radius: .5;
+  
+}
+
+.test2 {
+  background-color:blue;
+  padding-left: 0px;
+  padding-top: 0px;
 }
