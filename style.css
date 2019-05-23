@@ -130,7 +130,12 @@ table {
 
 .sitemenu {
   /* this is navigation wrapper for background buttons in site menu at the top */
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
   padding-top: 40px;
+  width: 100%;
+  height: 200px;
+  
 }
 .navbarbutt {
   /* this is button menu in far right with underline underneath will make a bootstrap like menu for mobile */
@@ -167,6 +172,7 @@ table {
 /* used to clear other classes that use floats */
 .clear {
   clear: both;
+  background-color: red;
 }
 
 /* animations related to main background images for smooth transition" */
