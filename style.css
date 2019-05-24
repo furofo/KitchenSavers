@@ -291,20 +291,35 @@ table {
   
 }
 
-.contactwrap {
+.contactwrap {           /* this is  a wrapper for part that says contact us will position actual content as absolute relative to this */
   position: relative;
-  background-color: green;
+ 
   margin-right: auto; /* 1 */
   margin-left:  auto; /* 1 */
   width: 100%;
   height: 150px;
+  background-color: grey; /* to provide a sort of overlay to make white text more readable */
 }
 
 .contacttxt {
   position: absolute;
   left: 0;
   top: 0;
+  padding-top: 50px;
+  padding-left: 30px;
+  font-size: 40px;
+  color: white;       /* part that reads contact us on contact page */
+ 
   
+}
+
+.contactimg {
+  width: 100%;
+  height: 150px;
+  position: absolute;   /* contact image in teh background */
+  top: 0;
+  left:0;
+  opacity: .7
 }
 
 /* media queries here */
