@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function() {
     location.href = "/index.html";
   };
   document.getElementById("contactbtn").onclick = function() {
-    location.href = "/contact.html";
+    location.href = "https://furofo.github.io/Jarrel-Cabinet/contact.html";
   };
   document.getElementById("gallerybtn").onclick = function() {
     location.href = "/gallery.html";
