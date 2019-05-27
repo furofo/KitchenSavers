@@ -393,24 +393,6 @@ input[type=text] {
 }
 
 
-.test1 {
-  width: 400px;
-  height: 400px;
-  padding-left: 30px;
-  padding-top: 30px;
-
-  background-color: red;
-  border-style: solid;
-  border-radius: .5;
-  
-}
-
-.test2 {
-  background-color:blue;
-  padding-left: 0px;
-  padding-top: 0px;
-}
-
 .map{
   width: 40%;
   float: right;
@@ -426,4 +408,15 @@ input[type=text] {
 .iframemap {
   padding-top: 50px;
   padding-left: 20px;
+}
+
+.submitbtn {
+  margin-top: 20px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+.submitbtn:hover { 
+  background-color: lightblue;
+  transition: all .7s;
 }
