@@ -325,7 +325,8 @@ table {
 .contactform {   /* wrapper div for input form and googel map on contact page */
  
   background-image: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(128, 66, 66, 0.1) 50%, hsla(0, 61%, 35%, 0));
-  background-color: blue !important;
+  
+  
 }
 
 .contactformtxt {
@@ -335,10 +336,11 @@ table {
 }
 
 .contactforminput {
-  padding-top: 60px;
+  padding-top: 45px;
   padding-left: 30px;
   font-weight: bold;  /* form text styling */
   font-size: 20px;
+
   
 }
 
@@ -369,8 +371,8 @@ input[type=text] {
 }
 
 .submitbtn {
-  margin-top: 20px;
-  font-size: 25px;
+  margin-top: 10px;
+  font-size: 23px;
   border-radius: 15px;
 }
 
@@ -439,3 +441,18 @@ input[type=text] {
   }
 }
 
+
+.test1 {
+  background-color: blue;
+  
+}
+
+.test2{
+  
+  height: 400px;
+  width: 400px;
+}
+
+.test3 {
+  height: 400px;
+}
