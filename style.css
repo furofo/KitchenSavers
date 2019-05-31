@@ -356,6 +356,7 @@ input[type=text] {
 .map{
   width: 40%;
   float: right;
+  
  
 }
 
@@ -368,6 +369,10 @@ input[type=text] {
 .iframemap {
   padding-top: 50px;
   padding-left: 20px;
+  
+  width: 70%;
+ 
+ 
 }
 
 .submitbtn {
@@ -418,8 +423,18 @@ input[type=text] {
   text-align: center;
 }
 
+.map {
+  float: none;
+  text-align: center;
+  width: 100%;
+  
+}
+
 .iframemap {
-  display: none;
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 0;
+  
 }
 
 .formfloat {
@@ -442,17 +457,3 @@ input[type=text] {
 }
 
 
-.test1 {
-  background-color: blue;
-  
-}
-
-.test2{
-  
-  height: 400px;
-  width: 400px;
-}
-
-.test3 {
-  height: 400px;
-}
