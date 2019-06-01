@@ -237,7 +237,7 @@ table {
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-
+  z-index: 3;
   position: relative;
 }
 
