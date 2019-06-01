@@ -386,7 +386,31 @@ input[type=text] {
   transition: all .7s;
 }
 
+.contactinfo {
+  
+  font-size: 32px;
+  padding-top: 20px;
+  
+}
 
+.contactinfo p {
+  font-size: 24px;
+}
+
+.contactinfowrapper {
+  width: 550px;
+  
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.blue {
+  color: blue;
+}
+
+.toppcontact {
+  padding-top: 20px;
+}
 
 
 /* media queries here */
@@ -441,6 +465,15 @@ input[type=text] {
   padding: 0 0 0 0;
   width: 100%;
   text-align: center;
+}
+
+.contactinfowrapper {
+  padding-top: 30px;
+  width: 390px;
+}
+
+.contactinfowrapper p {
+  font-size: 18px
 }
 
 }
