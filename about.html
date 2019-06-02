@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="config.js"></script>
-   
-    <div class="logo">
-      <img src="img/Logo.png" height="400px" width="400px" class = "imglogo"/>
-    </div>
-    <nav class="sitemenu">
-      <button id="contactbtn" class="navbarbutt marginright">Contact</button>
-      <button id="gallerybtn" class="navbarbutt">Gallery</button>
-      <button id="aboutbtn" class="navbarbutt">About Us</button>
-      <button id="homebtn" class="navbarbutt">Home</button>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="config.js"></script>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyAOUopcfxb5efAnnN74TQsVxu-BpGgyuPc"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
 
-      <div>
-        <!-- Top Navigation Menu -->
-        <div class="topnav mobilemenu">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-          <a href="https://furofo.github.io/Jarrel-Cabinet/about.html">About Us</a>
-          <a href="https://furofo.github.io/Jarrel-Cabinet/index.html">Home</a>
-          <a href="https://furofo.github.io/Jarrel-Cabinet/gallery.html">Gallery</a>
-          <a href="https://furofo.github.io/Jarrel-Cabinet/contact.html">Contact</a>
-      </div>
-          </div>
+  
+  <div class="sitemenu">
+      
+          <img src="img/Logo.png" height="150px" width="250px" class = "imglogo contactlogo"/>
+        
+    <button id="contactbtn" class="navbarbutt marginright navbarbuttcontact">Contact</button>
+    <button id="gallerybtn" class="navbarbutt navbarbuttcontact">Gallery</button>
+    <button id="aboutbtn" class="navbarbutt navbarbuttcontact">About Us</button>
+    <button id="homebtn" class="navbarbutt navbarbuttcontact">Home</button>
+
+
+    <div>
+      <!-- Top Navigation Menu -->
+      <div class="topnav mobilemenu">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="https://furofo.github.io/Jarrel-Cabinet/about.html">About Us</a>
+        <a href="https://furofo.github.io/Jarrel-Cabinet/index.html">Home</a>
+        <a href="https://furofo.github.io/Jarrel-Cabinet/gallery.html">Gallery</a>
+        <a href="https://furofo.github.io/Jarrel-Cabinet/contact.html">Contact</a>
+
+    </div>
+        </div>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           
          
@@ -39,7 +46,9 @@
     
 
   </head>
-<body>
+  <body class = "contactBody">
+    <img src = "img/background1.jpeg"  class = "contactHeader"/>
+    
   <h1>Contact Us</h1>
   </body>
 </html>
