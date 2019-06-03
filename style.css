@@ -131,11 +131,10 @@ table {
 .sitemenu {
   /* this is navigation wrapper for background buttons in site menu at the top */
   margin-right: auto; /* 1 */
-  margin-left:  auto; /* 1 */
+  margin-left: auto; /* 1 */
   padding-top: 40px;
   width: 100%;
   height: 160px;
-  
 }
 .navbarbutt {
   /* this is button menu in far right with underline underneath will make a bootstrap like menu for mobile */
@@ -172,7 +171,6 @@ table {
 /* used to clear other classes that use floats */
 .clear {
   clear: both;
-  
 }
 
 /* animations related to main background images for smooth transition" */
@@ -280,25 +278,27 @@ table {
 }
 
 .contactlogo {
-  position:absolute;
-  top: 0;         
+  position: absolute;
+  top: 0;
   left: 0;
-
 }
 
 .navbarbuttcontact {
   margin-top: 30px;
-  
 }
 
-.contactwrap {           /* this is  a wrapper for part that says contact us will position actual content as absolute relative to this */
+.contactwrap {
+  /* this is  a wrapper for part that says contact us will position actual content as absolute relative to this */
   position: relative;
- 
+
   margin-right: auto; /* 1 */
-  margin-left:  auto; /* 1 */
+  margin-left: auto; /* 1 */
   width: 100%;
   height: 150px;
-  background-image: linear-gradient(Grey, lightgrey); /* to provide a sort of overlay to make white text more readable */
+  background-image: linear-gradient(
+    Grey,
+    lightgrey
+  ); /* to provide a sort of overlay to make white text more readable */
 }
 
 .contacttxt {
@@ -308,60 +308,56 @@ table {
   padding-top: 50px;
   padding-left: 30px;
   font-size: 40px;
-  color: white;       /* part that reads contact us on contact page */
- 
-  
+  color: white; /* part that reads contact us on contact page */
 }
 
 .contactimg {
   width: 100%;
   height: 150px;
-  position: absolute;   /* contact image in tthe background */
+  position: absolute; /* contact image in tthe background */
   top: 0;
-  left:0;
-  opacity: .7
+  left: 0;
+  opacity: 0.7;
 }
 
-.contactform {   /* wrapper div for input form and googel map on contact page */
- 
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(128, 66, 66, 0.1) 50%, hsla(0, 61%, 35%, 0));
-  
-  
+.contactform {
+  /* wrapper div for input form and googel map on contact page */
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(128, 66, 66, 0.1) 50%,
+    hsla(0, 61%, 35%, 0)
+  );
 }
 
 .contactformtxt {
   padding-top: 30px;
-  text-align: center;  /* this is text above form and map */
+  text-align: center; /* this is text above form and map */
   font-size: 30px;
 }
 
 .contactforminput {
   padding-top: 45px;
   padding-left: 30px;
-  font-weight: bold;  /* form text styling */
+  font-weight: bold; /* form text styling */
   font-size: 20px;
-
-  
 }
 
-input[type=text] {
+input[type="text"] {
   width: 50%;
-  padding: 12px 20px;   /* input text styling */
+  padding: 12px 20px; /* input text styling */
   margin: 8px 0;
   box-sizing: border-box;
-  
 }
 
-
-.map{
+.map {
   width: 40%;
   float: right;
-  
- 
 }
 
 .formfloat {
-  float:left;
+  float: left;
   width: 45%;
   padding-left: 60px;
 }
@@ -369,10 +365,8 @@ input[type=text] {
 .iframemap {
   padding-top: 50px;
   padding-left: 20px;
-  
+
   width: 70%;
- 
- 
 }
 
 .submitbtn {
@@ -381,16 +375,14 @@ input[type=text] {
   border-radius: 15px;
 }
 
-.submitbtn:hover { 
+.submitbtn:hover {
   background-color: lightblue;
-  transition: all .7s;
+  transition: all 0.7s;
 }
 
 .contactinfo {
-  
   font-size: 32px;
   padding-top: 20px;
-  
 }
 
 .contactinfo p {
@@ -399,7 +391,7 @@ input[type=text] {
 
 .contactinfowrapper {
   width: 550px;
-  
+
   margin: 0 auto;
   padding-bottom: 40px;
 }
@@ -413,20 +405,28 @@ input[type=text] {
 }
 
 .aboutpic {
-float:left;
- padding-top: 40px;
- padding-left:20px;
- padding-right: 30px;
+  float: left;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .aboutbodystyle {
-
+  min-height: 100%;
   font-size: 30px;
 }
 
 .aboutbodystyle p {
-  padding-top:40px;
-
+  padding-top: 40px;
+  padding-right: 20px;
+}
+.aboutwrapper {
+  background-image:linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(128, 66, 66, 0.1) 50%,
+      hsla(0, 61%, 35%, 0)
+    );
 }
 
 /* media queries here */
@@ -436,8 +436,6 @@ float:left;
   }
 }
 @media only screen and (max-width: 950px) {
-  
-
   .navbarbutt {
     display: none;
   }
@@ -457,41 +455,38 @@ float:left;
     height: 300px;
   }
 
-.contactformtxt {
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-}
+  .contactformtxt {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
 
-.map {
-  float: none;
-  text-align: center;
-  width: 100%;
-  
-}
+  .map {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
 
-.iframemap {
-  width: 50%;
-  padding-left: 30px;
-  padding-right: 0;
-  
-}
+  .iframemap {
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 0;
+  }
 
-.formfloat {
-  padding: 0 0 0 0;
-  width: 100%;
-  text-align: center;
-}
+  .formfloat {
+    padding: 0 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
 
-.contactinfowrapper {
-  padding-top: 30px;
-  width: 390px;
-}
+  .contactinfowrapper {
+    padding-top: 30px;
+    width: 390px;
+  }
 
-.contactinfowrapper p {
-  font-size: 18px
-}
-
+  .contactinfowrapper p {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -504,5 +499,3 @@ float:left;
     height: 200px;
   }
 }
-
-
