@@ -421,18 +421,22 @@ input[type="text"] {
   padding-right: 20px;
 }
 .aboutwrapper {
-  background-image:linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.2),
-      rgba(128, 66, 66, 0.1) 50%,
-      hsla(0, 61%, 35%, 0)
-    );
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(128, 66, 66, 0.1) 50%,
+    hsla(0, 61%, 35%, 0)
+  );
 }
 
 /* media queries here */
 @media only screen and (max-width: 1050px) {
   .navbarbutt {
     font-size: 11px;
+  }
+
+  .aboutparagraph {
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -486,6 +490,20 @@ input[type="text"] {
 
   .contactinfowrapper p {
     font-size: 18px;
+  }
+
+  .aboutpic {
+    float: none;
+    display: block; /*center about pic on mobile */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .aboutparagraph {
+    text-align: center; /* media query to align all paragraphs on mobile to center in about page' */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
