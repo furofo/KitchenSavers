@@ -1,3 +1,12 @@
+window.onload = function() {
+  document.getElementById("gallery1").onclick = function() {
+      
+    document.body.style.backgroundColor = "red";
+    console.log("it worked!");
+  };
+}
+
+
 window.addEventListener("DOMContentLoaded", function() {
   document.getElementById("aboutbtn").onclick = function() {
     //these are listeners for each button that link to different website pages
@@ -12,6 +21,11 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById("gallerybtn").onclick = function() {
     location.href = "https://furofo.github.io/Jarrel-Cabinet/gallery.html";
   };
+  document.getElementById("gallery1").onclick = function() {
+      
+    document.body.style.backgroundColor = "red";
+    console.log("it worked!");
+  };
 
   var backgroundimg = document.getElementById("indexbackground1");
 
@@ -19,6 +33,8 @@ window.addEventListener("DOMContentLoaded", function() {
     "url(img/background1.jpeg)", //array of all background imgs to cycle through
     "url(img/background2.jpeg)"
   );
+
+  
 /*
   var current = 0;
 
