@@ -5,13 +5,13 @@ window.onload = function() {
 
     if(isclicked === 0) {
       
-    document.body.style.backgroundColor = "red";
+    document.getElementById("everythingwrapper").style.backgroundColor = "red";
     console.log("it worked!");
     isclicked = 1;
     }
 
     else {
-      document.body.style.backgroundColor = "blue";
+      document.getElementById("everythingwrapper").style.backgroundColor = "blue";
       isclicked = 0;
 
     }
