@@ -7,11 +7,16 @@ window.onload = function() {
       
     document.getElementById("overlay").style.display = "block";
     console.log("it worked!");
+    document.getElementById("gallery1").style.position = "absolute";
+    document.getElementById("gallery1").style.zIndex = "4000";
+
+
     isclicked = 1;
     }
 
     else {
       document.getElementById("overlay").style.display = "none";
+      document.getElementById("gallery1").style.position = "relative";
       isclicked = 0;
 
     }
