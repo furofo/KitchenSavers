@@ -1,8 +1,20 @@
+var isclicked = 0;
+
 window.onload = function() {
   document.getElementById("gallery1").onclick = function() {
+
+    if(isclicked === 0) {
       
     document.body.style.backgroundColor = "red";
     console.log("it worked!");
+    isclicked = 1;
+    }
+
+    else {
+      document.body.style.backgroundColor = "blue";
+      isclicked = 0;
+
+    }
   };
 }
 
