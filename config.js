@@ -5,13 +5,13 @@ window.onload = function() {
 
     if(isclicked === 0) {
       
-    document.getElementById("everythingwrapper").style.backgroundColor = "red";
+    document.getElementById("overlay").style.display = "block";
     console.log("it worked!");
     isclicked = 1;
     }
 
     else {
-      document.getElementById("everythingwrapper").style.backgroundColor = "blue";
+      document.getElementById("overlay").style.display = "none";
       isclicked = 0;
 
     }
