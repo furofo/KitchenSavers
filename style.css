@@ -429,6 +429,25 @@ input[type="text"] {
   );
 }
 
+.imgwrapper {
+  display: flex;
+  background-color: blue;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galleryimg {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 20%;
+  height: 20%;
+  padding-top: 40px;
+}
+
+.farrightimg {
+  padding-right: 0;
+}
+
 /* media queries here */
 @media only screen and (max-width: 1050px) {
   .navbarbutt {
@@ -437,6 +456,11 @@ input[type="text"] {
 
   .aboutparagraph {
     font-size: 24px;
+  }
+
+  .galleryimg {
+    width: 40%;
+    height: 40%;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -461,7 +485,7 @@ input[type="text"] {
 
   .contactformtxt {
     padding-left: 20px;
-    padding-right:20px;
+    padding-right: 20px;
     font-size: 20px;
     text-align: center;
   }
@@ -495,8 +519,6 @@ input[type="text"] {
     font-size: 18px;
   }
 
-  
-
   .aboutpic {
     float: none;
     display: block; /*center about pic on mobile */
@@ -509,6 +531,10 @@ input[type="text"] {
     text-align: center; /* media query to align all paragraphs on mobile to center in about page' */
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .galleryimg {
+    width: 70%;
   }
 }
 
