@@ -431,7 +431,11 @@ input[type="text"] {
 
 .imgwrapper {
   display: flex;
-  background-color: blue;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(128, 66, 66, 0.1) 50%,
+    hsla(0, 61%, 35%, 0));  /*flex box styling 4 rows on desktop 2 on tablet one  on mobile */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -459,7 +463,7 @@ input[type="text"] {
   }
 
   .galleryimg {
-    width: 40%;
+    width: 40%;   /* 2 images on tablet sized */
     height: 40%;
   }
 }
@@ -534,7 +538,7 @@ input[type="text"] {
   }
 
   .galleryimg {
-    width: 70%;
+    width: 70%;   /* one image on mobile */
   }
 }
 
