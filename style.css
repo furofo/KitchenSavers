@@ -442,12 +442,16 @@ input[type="text"] {
 }
 #gallery1 {
   width: 20%;
-}
-.galleryimg {
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
+  
   padding-top: 40px;
+
+}
+.galleryimg {
+  
+  width: 100%;
+  
 }
 
 .farrightimg {
@@ -465,7 +469,7 @@ input[type="text"] {
 }
 
 #overlay {
-  opacity: 0.8;
+  opacity: 1;
   background-color: #ccc;
   position: fixed;
   width: 100%;
@@ -473,7 +477,7 @@ input[type="text"] {
   top: 0px;
   left: 0px;
   z-index: 1000;
-  display: none;
+  
 }
 
 /* media queries here */
@@ -560,9 +564,10 @@ input[type="text"] {
     padding-right: 20px;
   }
 
-  .gallery1 {
+  #gallery1 {
     width: 70%; /* one image on mobile */
   }
+
 }
 
 @media only screen and (max-width: 550px) {

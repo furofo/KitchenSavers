@@ -2,32 +2,37 @@ var isclicked = 0;
 
 window.onload = function() {
   document.getElementById("gallery1").onclick = function() {
+    if (isclicked === 0) {
+      document.getElementById("overlay").style.display = "flex";
+      console.log("it worked!");
+      document.getElementById("overlay").style.opacity = "0.5";
 
-    if(isclicked === 0) {
       
-    document.getElementById("overlay").style.display = "block";
-    console.log("it worked!");
-    document.getElementById("gallery1").style.position = "fixed";
-    document.getElementById("gallery1").style.zIndex = "4000";
-    document.getElementById("gallery1").style.width = "40%";
-    document.getElementById("gallery1").style.height = "40%";
+      document.getElementById("overlay").style.flexFlow = "column nowrap";
+      
+      document.getElementById("overlay").style.justifyContent = "center";
+      document.getElementById("overlay").style.alignItems = "center";
+      document.getElementById("gallery2").style.display = "flex";
+      document.getElementById("gallery2").style.position = "fixed";
+      document.getElementById("gallery2").style.justifyContent = "center";
+      document.getElementById("gallery2").style.alignItems = "center";
+      
+     
+      document.getElementById("gallery2").style.zIndex = "4000";
+      document.getElementById("gallery2").style.width = "35%";
 
+     
 
-
-    isclicked = 1;
-    }
-
-    else {
+      isclicked = 1;
+    } else {
       document.getElementById("overlay").style.display = "none";
       document.getElementById("gallery1").style.position = "relative";
       document.getElementById("gallery1").style.width = "20%";
-    document.getElementById("gallery1").style.height = "20%";
-      isclicked = 0;
 
+      isclicked = 0;
     }
   };
-}
-
+};
 
 window.addEventListener("DOMContentLoaded", function() {
   document.getElementById("aboutbtn").onclick = function() {
@@ -44,7 +49,6 @@ window.addEventListener("DOMContentLoaded", function() {
     location.href = "https://furofo.github.io/Jarrel-Cabinet/gallery.html";
   };
   document.getElementById("gallery1").onclick = function() {
-      
     document.body.style.backgroundColor = "red";
     console.log("it worked!");
   };
@@ -56,8 +60,7 @@ window.addEventListener("DOMContentLoaded", function() {
     "url(img/background2.jpeg)"
   );
 
-  
-/*
+  /*
   var current = 0;
 
   function nextBackground() {
@@ -75,13 +78,14 @@ window.addEventListener("DOMContentLoaded", function() {
 
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 
-  var uluru = {lat: -25.344, lng: 131.036};
+  var uluru = { lat: -25.344, lng: 131.036 };
   // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru
+  });
   // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-  
+  var marker = new google.maps.Marker({ position: uluru, map: map });
 });
 
 function myFunction() {
