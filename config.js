@@ -1,28 +1,9 @@
 var isclicked = 0;
 
 window.onload = function() {
-  document.getElementById("gallery1").onclick = function() {
-    if (isclicked === 0) {
-      document.getElementById("overlay").style.display = "flex";
-      console.log("it worked!");
 
-      document.getElementById("overlay").style.flexFlow = "column nowrap";
-
-      document.getElementById("overlay").style.justifyContent = "center";
-      document.getElementById("overlay").style.alignItems = "center";
-
-      isclicked = 1;
-    } else {
-      document.getElementById("overlay").style.display = "none";
-      document.getElementById("gallery1").style.position = "relative";
-      document.getElementById("gallery1").style.width = "20%";
-
-      isclicked = 0;
-    }
-  };
-
-
-  document.getElementById("galleryonclick").onclick = function() {
+  function galleryClick(galleryid) {   /* function that i can put in element id and toggle image on and off so I don't have to repeat code */
+    document.getElementById(galleryid).onclick = function() {
     if (isclicked === 0) {
       document.getElementById("overlay").style.display = "flex";
       console.log("it worked!");
@@ -39,7 +20,12 @@ window.onload = function() {
 
       isclicked = 0;
     }
-  };
+  }
+  }
+
+  galleryClick("gallery1");
+  galleryClick("galleryonclick");
+  
 };
 
 window.addEventListener("DOMContentLoaded", function() {
