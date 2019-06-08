@@ -440,18 +440,15 @@ input[type="text"] {
   flex-wrap: wrap;
   justify-content: center;
 }
-#gallery1 {
+#gallerydivimg {
   width: 20%;
   padding-left: 20px;
   padding-right: 20px;
-  
-  padding-top: 40px;
 
+  padding-top: 40px;
 }
 .galleryimg {
-  
   width: 100%;
-  
 }
 
 .farrightimg {
@@ -469,8 +466,12 @@ input[type="text"] {
 }
 
 #overlay {
-  display:none;
-  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  display: none;
+  background: rgb(
+    204,
+    204,
+    204
+  ); /* Fallback for older browsers without RGBA-support */
   background: rgba(204, 204, 204, 0.5);
   position: fixed;
   width: 100%;
@@ -478,8 +479,6 @@ input[type="text"] {
   top: 0px;
   left: 0px;
   z-index: 1000;
-  
-  
 }
 
 #galleryonclick {
@@ -497,7 +496,7 @@ input[type="text"] {
     font-size: 24px;
   }
 
-  #gallery1 {
+  #gallerydivimg {
     width: 40%; /* 2 images on tablet sized */
   }
 }
@@ -571,14 +570,13 @@ input[type="text"] {
     padding-right: 20px;
   }
 
-  #gallery1 {
+  #gallerydivimg {
     width: 70%; /* one image on mobile */
   }
 
   #galleryonclick {
     width: 60%;
   }
-
 }
 
 @media only screen and (max-width: 550px) {

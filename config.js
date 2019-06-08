@@ -1,31 +1,40 @@
 var isclicked = 0;
 
 window.onload = function() {
-
-  function galleryClick(galleryid) {   /* function that i can put in element id and toggle image on and off so I don't have to repeat code */
-    document.getElementById(galleryid).onclick = function() {
-    if (isclicked === 0) {
-      document.getElementById("overlay").style.display = "flex";
-      console.log("it worked!");
-
-      document.getElementById("overlay").style.flexFlow = "column nowrap";
-
-      document.getElementById("overlay").style.justifyContent = "center";
-      document.getElementById("overlay").style.alignItems = "center";
-
-      isclicked = 1;
-    } else {
-      document.getElementById("overlay").style.display = "none";
-      
-
-      isclicked = 0;
+  function changeImgUrl(imgclicked) {
+    var imageId = document.getElementById(imgclicked); /* this is the id of the image clicked */
+    if(imgclicked == "gallery2") {
+      document.getElementById("galleryonclick").src = "img/background2.jpeg";
+    }
+    else {
+      document.getElementById("galleryonclick").src = "img/background1.jpeg";
     }
   }
+  function galleryClick(galleryid) {
+    /* function that i can put in element id and toggle image on and off so I don't have to repeat code */
+    document.getElementById(galleryid).onclick = function() {
+      changeImgUrl(galleryid);
+      console.log(document.getElementById("galleryonclick").src  + "this is gallery id");
+      if (isclicked === 0) {
+        document.getElementById("overlay").style.display = "flex";
+        console.log("it worked!");
+
+        document.getElementById("overlay").style.flexFlow = "column nowrap";
+
+        document.getElementById("overlay").style.justifyContent = "center";
+        document.getElementById("overlay").style.alignItems = "center";
+
+        isclicked = 1;
+      } else {
+        document.getElementById("overlay").style.display = "none";
+
+        isclicked = 0;
+      }
+    };
   }
 
-  galleryClick("gallery1");
-  galleryClick("galleryonclick");
-  
+  galleryClick("gallery2"); /*added click function for id with gallerydivimg */
+  galleryClick("galleryonclick"); /*added click functionforid with gallery2 */
 };
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -42,10 +51,7 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById("gallerybtn").onclick = function() {
     location.href = "https://furofo.github.io/Jarrel-Cabinet/gallery.html";
   };
-  document.getElementById("gallery1").onclick = function() {
-    document.body.style.backgroundColor = "red";
-    console.log("it worked!");
-  };
+  
 
   var backgroundimg = document.getElementById("indexbackground1");
 
