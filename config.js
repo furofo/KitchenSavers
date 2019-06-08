@@ -22,7 +22,7 @@ window.onload = function() {
   };
 
 
-  document.getElementById("gallery3").onclick = function() {
+  document.getElementById("galleryonclick").onclick = function() {
     if (isclicked === 0) {
       document.getElementById("overlay").style.display = "flex";
       console.log("it worked!");
@@ -35,8 +35,7 @@ window.onload = function() {
       isclicked = 1;
     } else {
       document.getElementById("overlay").style.display = "none";
-      document.getElementById("gallery1").style.position = "relative";
-      document.getElementById("gallery1").style.width = "20%";
+      
 
       isclicked = 0;
     }
