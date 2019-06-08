@@ -469,8 +469,9 @@ input[type="text"] {
 }
 
 #overlay {
-  opacity: 1;
-  background-color: #ccc;
+  display:none;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.5);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -478,8 +479,14 @@ input[type="text"] {
   left: 0px;
   z-index: 1000;
   
+  
 }
 
+#galleryonclick {
+  width: 35%;
+  z-index: 2000;
+  opacity: 1;
+}
 /* media queries here */
 @media only screen and (max-width: 1050px) {
   .navbarbutt {
@@ -566,6 +573,10 @@ input[type="text"] {
 
   #gallery1 {
     width: 70%; /* one image on mobile */
+  }
+
+  #galleryonclick {
+    width: 60%;
   }
 
 }

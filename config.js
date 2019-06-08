@@ -5,23 +5,32 @@ window.onload = function() {
     if (isclicked === 0) {
       document.getElementById("overlay").style.display = "flex";
       console.log("it worked!");
-      document.getElementById("overlay").style.opacity = "0.5";
 
-      
       document.getElementById("overlay").style.flexFlow = "column nowrap";
-      
+
       document.getElementById("overlay").style.justifyContent = "center";
       document.getElementById("overlay").style.alignItems = "center";
-      document.getElementById("gallery2").style.display = "flex";
-      document.getElementById("gallery2").style.position = "fixed";
-      document.getElementById("gallery2").style.justifyContent = "center";
-      document.getElementById("gallery2").style.alignItems = "center";
-      
-     
-      document.getElementById("gallery2").style.zIndex = "4000";
-      document.getElementById("gallery2").style.width = "35%";
 
-     
+      isclicked = 1;
+    } else {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("gallery1").style.position = "relative";
+      document.getElementById("gallery1").style.width = "20%";
+
+      isclicked = 0;
+    }
+  };
+
+
+  document.getElementById("gallery3").onclick = function() {
+    if (isclicked === 0) {
+      document.getElementById("overlay").style.display = "flex";
+      console.log("it worked!");
+
+      document.getElementById("overlay").style.flexFlow = "column nowrap";
+
+      document.getElementById("overlay").style.justifyContent = "center";
+      document.getElementById("overlay").style.alignItems = "center";
 
       isclicked = 1;
     } else {
