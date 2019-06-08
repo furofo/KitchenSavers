@@ -4,10 +4,10 @@ window.onload = function() {
   function changeImgUrl(imgclicked) {
     var imageId = document.getElementById(imgclicked); /* this is the id of the image clicked */
     if(imgclicked == "gallery2") {
-      document.getElementById("galleryonclick").src = "img/background2.jpeg";
+      document.getElementById("galleryonclick").src = "img/gallery1.jpg";
     }
     else {
-      document.getElementById("galleryonclick").src = "img/background1.jpeg";
+      document.getElementById("galleryonclick").src = "img/gallery2.jpg";
     }
   }
   function galleryClick(galleryid) {
