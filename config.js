@@ -2,19 +2,20 @@ var isclicked = 0;
 
 window.onload = function() {
   function changeImgUrl(imgclicked) {
-    var imageId = document.getElementById(imgclicked); /* this is the id of the image clicked */
-    if(imgclicked == "gallery2") {
-      document.getElementById("galleryonclick").src = "img/gallery1.jpg";
-    }
-    else {
-      document.getElementById("galleryonclick").src = "img/gallery2.jpg";
-    }
+    var imageId = document.getElementById(
+      imgclicked
+    ); /* this is the id of the image clicked */
+
+    document.getElementById("galleryonclick").src =
+      "img/" + imgclicked + ".jpg";
   }
   function galleryClick(galleryid) {
     /* function that i can put in element id and toggle image on and off so I don't have to repeat code */
     document.getElementById(galleryid).onclick = function() {
       changeImgUrl(galleryid);
-      console.log(document.getElementById("galleryonclick").src  + "this is gallery id");
+      console.log(
+        document.getElementById("galleryonclick").src + "this is gallery id"
+      );
       if (isclicked === 0) {
         document.getElementById("overlay").style.display = "flex";
         console.log("it worked!");
@@ -33,7 +34,19 @@ window.onload = function() {
     };
   }
 
-  galleryClick("gallery2"); /*added click function for id with gallerydivimg */
+  galleryClick("gallery1");
+  galleryClick("gallery2"); 
+  galleryClick("gallery3");
+  galleryClick("gallery4");
+  galleryClick("gallery5");
+  galleryClick("gallery6");
+  galleryClick("gallery7");
+  galleryClick("gallery8");
+  galleryClick("gallery9");
+  galleryClick("gallery10");
+  galleryClick("gallery11");
+  galleryClick("gallery12");
+  
   galleryClick("galleryonclick"); /*added click functionforid with gallery2 */
 };
 
@@ -51,7 +64,6 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById("gallerybtn").onclick = function() {
     location.href = "https://furofo.github.io/Jarrel-Cabinet/gallery.html";
   };
-  
 
   var backgroundimg = document.getElementById("indexbackground1");
 
