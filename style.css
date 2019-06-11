@@ -497,7 +497,7 @@ input[type="text"] {
   width: 20%;
   padding-left: 20px;
   padding-right: 20px;
-  z-index: -30;
+ 
   padding-top: 40px;
 }
 .galleryimg {
@@ -632,7 +632,7 @@ input[type="text"] {
   }
 
   #galleryonclick {
-    width: 60%;
+    width: 85%;
   }
 }
 
