@@ -166,6 +166,8 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: gray;
+  z-index: 2;
 }
 
 /* used to clear other classes that use floats */
@@ -189,6 +191,17 @@ table {
     opacity: 0;
   }
 }
+.homepageoverlay {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  pointer-events: none;
+  opacity: 0.45;
+  background: black;
+}
 .homepageimgwrapper {
   position: absolute;
   top: 0;
@@ -196,12 +209,18 @@ table {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: rgb(
+    204,
+    204,
+    204
+  );
+  z-index: -11;
   pointer-events: none;
 }
 #img1 {
   position: absolute;
   top: 0;
-  left: 0p;
+  left: 0;
   width: 110%;
   overflow:hidden;
   z-index: -1;
@@ -478,7 +497,7 @@ input[type="text"] {
   width: 20%;
   padding-left: 20px;
   padding-right: 20px;
-
+  z-index: -30;
   padding-top: 40px;
 }
 .galleryimg {
@@ -550,8 +569,12 @@ input[type="text"] {
   }
 
   .imglogo {
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
+  }
+
+  #img2 {
+    width: 300%;
   }
 
   .contactformtxt {
