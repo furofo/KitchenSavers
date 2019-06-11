@@ -540,8 +540,10 @@ input[type="text"] {
   padding-bottom: 5px;
   padding-top: 5px;
   text-align: center;
-  border-radius: 50%;
-  background-color: red;
+  
+  background-color: rgb(46, 46, 46);
+  color: white;
+  font-size: 25px;
 }
 
 #galleryonclick {
