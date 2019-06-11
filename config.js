@@ -47,6 +47,7 @@ window.onload = function() {
   galleryClick("gallery11");
   galleryClick("gallery12");
   
+  galleryClick("closebtn");
   galleryClick("galleryonclick"); /*added click functionforid with gallery2 */
 };
 
