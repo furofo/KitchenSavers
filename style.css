@@ -194,7 +194,7 @@ table {
 .homepageoverlay {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: -5;
@@ -209,11 +209,7 @@ table {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: rgb(
-    204,
-    204,
-    204
-  );
+  background: rgb(204, 204, 204);
   z-index: -11;
   pointer-events: none;
 }
@@ -222,7 +218,7 @@ table {
   top: 0;
   left: 0;
   width: 110%;
-  overflow:hidden;
+  overflow: hidden;
   z-index: -1;
 }
 
@@ -237,7 +233,7 @@ table {
   animation-duration: 6s;
   animation-direction: alternate;
   z-index: -1;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 /* default mobile menu is none media query to set to visible when on mobile  this i hamburger menu */
@@ -289,13 +285,12 @@ table {
 
 /* Add a grey background color on mouse-over */
 
-
 /* styling for contact page */
 .headercontainer {
   position: absolute;
   top: 0;
   left: 0;
-  height:200px;
+  height: 200px;
   overflow: hidden;
   background: rgb(
     204,
@@ -305,12 +300,9 @@ table {
   background: rgba(204, 204, 204, 0.5);
   opacity: 1;
   z-index: -11;
-
 }
 
 .contactHeader {
-  
-  
   width: 110%;
   background-color: grey;
   z-index: -1;
@@ -320,10 +312,10 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  height:200px;
+  height: 200px;
   width: 100%;
   background-color: black;
-  opacity: .45;
+  opacity: 0.45;
   z-index: -5;
   pointer-events: none;
 }
@@ -455,8 +447,6 @@ input[type="text"] {
   padding-top: 20px;
 }
 
-
-
 .aboutbodystyle {
   min-height: 100%;
   font-size: 30px;
@@ -476,20 +466,16 @@ input[type="text"] {
 }
 
 .aboutimgwrapper {
-
   overflow: hidden;
   width: 100%;
- 
-  
 }
 
 .aboutpic {
-  display: block; 
+  display: block;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
   width: 50%;
   padding-top: 40px;
- 
 }
 
 .imgwrapper {
@@ -507,7 +493,7 @@ input[type="text"] {
   width: 20%;
   padding-left: 20px;
   padding-right: 20px;
- 
+
   padding-top: 40px;
 }
 .galleryimg {
@@ -545,18 +531,16 @@ input[type="text"] {
 }
 
 #closebtn {
-  width: 5%;
+  width: 5em;
   margin-bottom: 30px;
   padding-bottom: 5px;
   padding-top: 5px;
   text-align: center;
-  
+
   background-color: rgb(46, 46, 46);
   color: white;
   font-size: 25px;
 }
-
-
 
 #galleryonclick {
   width: 35%;
