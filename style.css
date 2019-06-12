@@ -288,9 +288,7 @@ table {
 }
 
 /* Add a grey background color on mouse-over */
-.topnav a:hover {
-  color: black;
-}
+
 
 /* styling for contact page */
 .headercontainer {
@@ -546,6 +544,8 @@ input[type="text"] {
   font-size: 25px;
 }
 
+
+
 #galleryonclick {
   width: 35%;
   z-index: 2000;
@@ -605,7 +605,7 @@ input[type="text"] {
   }
 
   .iframemap {
-    width: 50%;
+    width: 65%;
     padding-left: 30px;
     padding-right: 0;
   }
