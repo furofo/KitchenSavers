@@ -451,6 +451,11 @@ input[type="text"] {
   min-height: 100%;
   font-size: 30px;
 }
+.aboutparagraph {
+  text-align: center; 
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .aboutbodystyle p {
   padding-top: 40px;
@@ -629,11 +634,7 @@ input[type="text"] {
     width: 50%;
   }
 
-  .aboutparagraph {
-    text-align: center; /* media query to align all paragraphs on mobile to center in about page' */
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  
 
   #gallerydivimg {
     width: 70%; /* one image on mobile */
