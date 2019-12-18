@@ -127,7 +127,9 @@ table {
 /* this is to reset background browser padding back to 0 to prevent weird issues across browsers */
 
 /*website styling starts here */
-
+.imglogo {
+  opacity: 0.6;
+}
 .sitemenu {
   /* this is navigation wrapper for background buttons in site menu at the top */
   margin-right: auto; /* 1 */
@@ -323,7 +325,7 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .navbarbuttcontact {
@@ -453,7 +455,7 @@ input[type="text"] {
   font-size: 30px;
 }
 .aboutparagraph {
-  text-align: center; 
+  text-align: center;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -505,7 +507,10 @@ input[type="text"] {
 .galleryimg {
   width: 100%;
 }
-
+.fa {
+  font-size: 40px;
+  opacity: 0.8;
+}
 .farrightimg {
   padding-right: 0;
 }
@@ -585,7 +590,6 @@ input[type="text"] {
   .imglogo {
     width: 150px;
     height: 150px;
-    
   }
 
   #img2 {
@@ -635,8 +639,6 @@ input[type="text"] {
     margin-right: auto;
     width: 90%;
   }
-
-  
 
   #gallerydivimg {
     width: 70%; /* one image on mobile */
