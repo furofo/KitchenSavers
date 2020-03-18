@@ -54,16 +54,16 @@ window.onload = function() {
 window.addEventListener("DOMContentLoaded", function() {
   document.getElementById("aboutbtn").onclick = function() {
     //these are listeners for each button that link to different website pages
-    location.href = "https://furofo.github.io/Jarrel-Cabinet/about.html";
+    location.href = "http://www.kitchensavers.co/about.html";
   };
   document.getElementById("homebtn").onclick = function() {
-    location.href = "https://furofo.github.io/Jarrel-Cabinet/index.html";
+    location.href = "http://www.kitchensavers.co/index.html";
   };
   document.getElementById("contactbtn").onclick = function() {
-    location.href = "https://furofo.github.io/Jarrel-Cabinet/contact.html";
+    location.href = "http://www.kitchensavers.co/contact.html";
   };
   document.getElementById("gallerybtn").onclick = function() {
-    location.href = "https://furofo.github.io/Jarrel-Cabinet/gallery.html";
+    location.href = "http://www.kitchensavers.co/gallery.html";
   };
 
   var backgroundimg = document.getElementById("indexbackground1");
